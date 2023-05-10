@@ -7,7 +7,24 @@
     <link rel="stylesheet" href="style.css" />
 <script defer src="bundle.js"></script></head>
 <body>
-    <h1>Hello webpack!</h1>
-    <script src="./src/index.js"></script>
+     <main class="todo">
+    <h1 class="todo_title">Today's To Do<span class="material-symbols-outlined todo_title-refresh">
+        autorenew
+      </span></h1>
+    <div class="todo_input">
+      <input type="text" id="new-task-input" placeholder="Add to your list..."></input>
+      <span class="material-symbols-outlined" id="addBtn"> subdirectory_arrow_left </span>
+    </div>
+    <div>
+      <ul id="todo-list">      
+        
+
+      </ul>
+    </div>
+    <div class="todo_button">
+      <button id="clear-completed" class="todo_clear">Clear all completed</button>
+    </div>
+  </main>
+  <script src="./src/index.js" type="module"></script>
 </body>
 </html>
