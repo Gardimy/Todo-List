@@ -1,9 +1,9 @@
-# ES6
+# Webpack setup
 <a name="readme-top"></a>
 
 <div align="center">
 
-  <h3><b>Awesome books</b></h3>
+  <h3><b>Webpack setup</b></h3>
 
 </div>
 
@@ -29,8 +29,8 @@
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
-# 📖Aweesome books<a name="about-project"></a>
-In this project, I build a basic website that allows users to add/remove books from a list. I achieve that by using The recent version of javaScript (ES6). I also dynamically modify the DOM and add basic events.. The use of linters and eslint to ensure code quality follows the Javascript best practices.
+# 📖Webpack setup<a name="about-project"></a>
+In this exercise I build a simple powerful webpack boilerplate, which I can later use as a starting point in my projects. I am working with the webpack official guides to create this setup.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -70,7 +70,7 @@ In this project, I build a basic website that allows users to add/remove books f
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Gardimy/ES6_modules/issues).
+Feel free to check the [issues page](https://github.com/Gardimy/Webpack_setup/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,11 +92,11 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-`https://github.com/Gardimy/ES6_modules`
+`https://github.com/Gardimy/Webpack_setup`
 
 or
 
-`https://github.com/Gardimy/ES6_modules` <-- _Only if you have [SSH keys configured](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) on your GitHub account_.
+`https://github.com/Gardimy/Webpack_setup` <-- _Only if you have [SSH keys configured](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) on your GitHub account_.
 
 ### Install:
 
