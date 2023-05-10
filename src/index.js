@@ -1,1 +1,0 @@
-import component from "./generator";
