@@ -34,7 +34,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 2px solid lightgray;
   align-content: center;
   align-items: center;
