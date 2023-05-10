@@ -1,9 +1,9 @@
-# Webpack setup
+# To do list structure
 <a name="readme-top"></a>
 
 <div align="center">
 
-  <h3><b>Webpack setup</b></h3>
+  <h3><b>To do list structure</b></h3>
 
 </div>
 
@@ -29,7 +29,7 @@
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
-# 📖Webpack setup<a name="about-project"></a>
+# 📖To list structure<a name="about-project"></a>
 In this exercise I build a simple powerful webpack boilerplate, which I can later use as a starting point in my projects. I am working with the webpack official guides to create this setup.
 ## 🛠 Built With <a name="built-with"></a>
 
