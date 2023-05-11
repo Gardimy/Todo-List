@@ -1,10 +1,9 @@
-// src/modules/function.js
+// function.js
+import { addTask, updateLocalStorage } from './app.js';
+
 export default function populateTodoList() {
-  const tasks = [
-    { description: 'task1', completed: false, index: 1 },
-    { description: 'task2', completed: true, index: 2 },
-    { description: 'task3', completed: false, index: 3 },
-  ];
+  const tasksString = localStorage.getItem('tasks');
+  const tasks = tasksString ? JSON.parse(tasksString) : [];
 
   const todoList = document.getElementById('todo');
 
@@ -12,10 +11,28 @@ export default function populateTodoList() {
     const listItem = document.createElement('li');
     listItem.className = 'task-item';
     listItem.innerHTML = `
-      <input type="checkbox" class="checkbox" ${task.completed ? 'checked' : ''}>
-      <input type="text" class="Text" value="${task.description}" ${task.completed ? 'disabled' : ''}>
-      <span class="material-symbols-outlined delete">delete_outline</span>
+      <div class="taskContainer">
+        <input type="checkbox" class="checkbox" ${task.completed ? 'checked' : ''}>
+        <input type="text" class="Text" value="${task.description}" ${task.completed ? 'disabled' : ''}>
+        <button class="removeBtn" type="button">&#x1F5D1;</button>
+      </div>     
     `;
     todoList.appendChild(listItem);
   });
+
+  // Functionality for adding tasks
+  const addBtn = document.getElementById('addBtn');
+  const newTaskInput = document.getElementById('new-task-input');
+
+  addBtn.addEventListener('click', () => {
+    const description = newTaskInput.value;
+    if (description.trim() !== '') {
+      addTask(tasks, description);
+      updateLocalStorage(tasks);
+      populateTodoList(); // Refresh the list after adding a task
+      newTaskInput.value = '';
+    }
+  });
+
+  // ...
 }
