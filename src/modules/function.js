@@ -1,5 +1,10 @@
 import { addTask, updateLocalStorage } from './app.js';
 
+// Function to generate a unique ID
+function generateUniqueId() {
+  return Date.now().toString(36) + Math.random().toString(36).substr(2);
+}
+
 const removeTask = (tasks, taskId) => {
   if (taskId >= 0 && taskId < tasks.length) {
     tasks.splice(taskId, 1);
@@ -38,7 +43,7 @@ export default function populateTodoList() {
       const newTask = {
         id: generateUniqueId(), // Generate a unique ID for the task
         description,
-        completed: false
+        completed: false,
       };
       addTask(tasks, newTask);
       updateLocalStorage(tasks);
@@ -58,9 +63,4 @@ export default function populateTodoList() {
       populateTodoList(); // Refresh the list after removing a task
     });
   });
-}
-
-// Function to generate a unique ID
-function generateUniqueId() {
-  return Date.now().toString(36) + Math.random().toString(36).substr(2);
 }
