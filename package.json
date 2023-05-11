@@ -388,7 +388,8 @@
     "webpack-cli": "^5.1.1"
   },
   "scripts": {
-    "build": "webpack"
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
