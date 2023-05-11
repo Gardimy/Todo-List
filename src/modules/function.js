@@ -12,9 +12,11 @@ export default function populateTodoList() {
     const listItem = document.createElement('li');
     listItem.className = 'task-item';
     listItem.innerHTML = `
+ <div class="taskContainer">
       <input type="checkbox" class="checkbox" ${task.completed ? 'checked' : ''}>
       <input type="text" class="Text" value="${task.description}" ${task.completed ? 'disabled' : ''}>
-      <span class="material-symbols-outlined delete">delete_outline</span>
+      <button class="removeBtn" type="button">&#x1F5D1;</button>
+ </div>     
     `;
     todoList.appendChild(listItem);
   });
