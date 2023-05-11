@@ -5,6 +5,10 @@ if (typeof window !== 'undefined' && window.localStorage) {
 }
 
 const updateLocalStorage = (tasks) => {
+  tasks.forEach((task, index) => {
+    task.index = index + 1;
+  });
+
   localStorage.setItem('tasks', JSON.stringify(tasks));
 };
 
