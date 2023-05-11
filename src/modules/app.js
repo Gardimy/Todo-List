@@ -1,3 +1,13 @@
+let localStorage = {}; // Mock localStorage for non-browser environments
+
+if (typeof window !== 'undefined' && window.localStorage) {
+  localStorage = window.localStorage;
+}
+
+const updateLocalStorage = (tasks) => {
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+};
+
 const addTask = (tasks, description) => {
   const newTask = {
     description,
@@ -5,25 +15,24 @@ const addTask = (tasks, description) => {
     index: tasks.length + 1,
   };
   tasks.push(newTask);
+  updateLocalStorage(tasks);
 };
 
 const deleteTask = (tasks, taskId) => {
   if (taskId >= 0 && taskId < tasks.length) {
     tasks.splice(taskId, 1);
     for (let i = taskId; i < tasks.length; i += 1) {
-      tasks[i].index -= 1;
+      tasks[i].index = i + 1;
     }
+    updateLocalStorage(tasks);
   }
 };
 
 const editTaskDescription = (tasks, taskId, newDescription) => {
   if (taskId >= 0 && taskId < tasks.length) {
     tasks[taskId].description = newDescription;
+    updateLocalStorage(tasks);
   }
-};
-
-const updateLocalStorage = (tasks) => {
-  localStorage.setItem('tasks', JSON.stringify(tasks));
 };
 
 export {
