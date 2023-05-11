@@ -1,4 +1,4 @@
-let localStorage = {}; // Mock localStorage for non-browser environments
+let localStorage = {};
 
 if (typeof window !== 'undefined' && window.localStorage) {
   localStorage = window.localStorage;
