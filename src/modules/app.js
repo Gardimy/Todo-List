@@ -1,25 +1,31 @@
-// todoFunctions.js
-export function addTask(tasks, description) {
+const addTask = (tasks, description) => {
   const newTask = {
     description,
     completed: false,
     index: tasks.length + 1,
   };
   tasks.push(newTask);
-}
+};
 
-export function deleteTask(tasks, index) {
-  tasks.splice(index - 1, 1);
+const deleteTask = (tasks, taskId) => {
+  if (taskId >= 0 && taskId < tasks.length) {
+    tasks.splice(taskId, 1);
+    for (let i = taskId; i < tasks.length; i += 1) {
+      tasks[i].index -= 1;
+    }
+  }
+};
 
-  tasks.forEach((task, i) => {
-    task.index = i + 1;
-  });
-}
+const editTaskDescription = (tasks, taskId, newDescription) => {
+  if (taskId >= 0 && taskId < tasks.length) {
+    tasks[taskId].description = newDescription;
+  }
+};
 
-export function editTaskDescription(tasks, index, newDescription) {
-  tasks[index - 1].description = newDescription;
-}
-
-export function updateLocalStorage(tasks) {
+const updateLocalStorage = (tasks) => {
   localStorage.setItem('tasks', JSON.stringify(tasks));
-}
+};
+
+export {
+  addTask, deleteTask, editTaskDescription, updateLocalStorage,
+};
