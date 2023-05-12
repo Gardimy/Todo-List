@@ -15,6 +15,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -70,6 +71,10 @@ In this project, I add some functionality to my application to make it interacti
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/Gardimy/Webpack_setup/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+[Live Demo](https://gardimy.github.io/Webpack_setup/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
