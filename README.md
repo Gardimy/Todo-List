@@ -1,9 +1,9 @@
-# To do list structure
+# To do list: Interactive list
 <a name="readme-top"></a>
 
 <div align="center">
 
-  <h3><b>To do list structure</b></h3>
+  <h3><b>Interactive list</b></h3>
 
 </div>
 
@@ -28,8 +28,8 @@
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
-# 📖To list structure<a name="about-project"></a>
-In this exercise I build a simple powerful webpack boilerplate, which I can later use as a starting point in my projects. I am working with the webpack official guides to create this setup.
+# 📖Interactive list<a name="about-project"></a>
+In this project, I add some functionality to my application to make it interactive. The user will also be able to mark task completion by selecting the corresponding checkbox (or undo it by unchecking the checkbox). The updated tasks list will be stored in local storage.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -79,7 +79,7 @@ Feel free to check the [issues page](https://github.com/Gardimy/Webpack_setup/is
 
 >If you are a new developer and would like to have a basic project to start practicing your code or creating your first project Using the most receent version of javaScript ,HTML and CSS : Cloning this project will give you what you need!
 
-> To get a local copy up and running, follow these steps:
+> To get a local copy up and running, follow these steps: npm run dev or npm start to start this app.
 ### Prerequisites
 
 In order to run this project you need:
