@@ -21,7 +21,7 @@
 
 .title,
 .input,
-.todo_button,
+.btn-clear,
 p {
   display: flex;
   flex-direction: row;
