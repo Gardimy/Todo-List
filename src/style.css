@@ -56,12 +56,12 @@ button {
   list-style: none;
 }
 
-.taskContainer {
+.Container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-content: center;
   height: 50px;
-  justify-content: space-between;
   padding: 5px 12px;
   align-items: center;
 }
