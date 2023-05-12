@@ -32,6 +32,11 @@ export default function populateTodoList() {
         <button class="removeBtn" type="button" data-id="${index}">&#x1F5D1;</button>
       </div>     
     `;
+    const checkbox = listItem.querySelector('.checkbox');
+    checkbox.addEventListener('change', () => {
+      tasks[index].completed = checkbox.checked;
+      updateLocalStorage(tasks);
+    });
     todoList.appendChild(listItem);
   });
 
