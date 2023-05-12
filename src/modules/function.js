@@ -10,6 +10,7 @@ const clearCompletedTasks = (tasks) => {
   const remainingTasks = tasks.filter((task) => !task.completed);
   tasks.length = 0;
   remainingTasks.forEach((task) => tasks.push(task));
+  updateLocalStorage(tasks);
 };
 
 export default function populateTodoList() {
