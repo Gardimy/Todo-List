@@ -3,6 +3,7 @@ import { addTask, updateLocalStorage } from './app.js';
 const removeTask = (tasks, taskId) => {
   if (taskId >= 0 && taskId < tasks.length) {
     tasks.splice(taskId, 1);
+    updateLocalStorage(tasks);
   }
 };
 
