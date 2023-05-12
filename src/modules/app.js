@@ -1,4 +1,4 @@
-let localStorage = {};
+let localStorage = [];
 
 if (typeof window !== 'undefined' && window.localStorage) {
   localStorage = window.localStorage;
