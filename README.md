@@ -79,7 +79,7 @@ Feel free to check the [issues page](https://github.com/Gardimy/Webpack_setup/is
 
 >If you are a new developer and would like to have a basic project to start practicing your code or creating your first project Using the most receent version of javaScript ,HTML and CSS : Cloning this project will give you what you need!
 
-> To get a local copy up and running, follow these steps:
+> To get a local copy up and running, follow these steps: npm run dev or npm start to start this app.
 ### Prerequisites
 
 In order to run this project you need:
